@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Include jQuery -->
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+		<!-- Include jquery.ibacor-gp-streaming -->
+		<script src="js/jquery.ibacor-gp-streaming.min.js"></script>
+
+		<!-- Configuration your gp+ username & gp+ api key -->
+		<script>
+			ibacor_gp_streaming(
+				ibacor_gp_username = '+google', // example your gp+ username
+				ibacor_gp_key = 'ibacor.com_apps'
+			);
+		</script>
+	
+		<!-- Custom your style -->
+		<link type="text/css" rel="stylesheet" href="css/ibacor-gp-streaming.css" />
+		
+		<!-- Include Font Awesome v4.1.0 -->
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- Include jQuery fancybox -->
+		<link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"/>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+		<script>
+			$( document ).ready(function() {	   
+				$(".ibacor_gvid").fancybox({   
+					'width'  : '90%',
+					'height'  : '90%',
+					'autoScale'  : false,
+					'transitionIn'  : 'none',
+					'transitionOut'  : 'none',
+					'type'  : 'iframe'
+				});	   
+				$(".ibacor_gpopup").fancybox({   
+					'openEffect'   : 'fade',
+					'closeEffect'   : 'fade',
+					'scrolling'  : 'no'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- Display all google+ timeline -->
+		<div id="ibacor_gp"></div><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</body>
+</html>

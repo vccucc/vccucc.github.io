@@ -653,7 +653,16 @@
 		overflow: hidden;
 		background: #fff;
 	}
-	
+
+	#main-wrapper2
+	{
+		float: right;
+		position: relative;
+		left: -50%;
+		overflow: hidden;
+		background: #fff;
+	}
+
 	#footer-wrapper
 	{
 		position: relative;
